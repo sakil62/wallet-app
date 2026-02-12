@@ -1,47 +1,80 @@
-<h1 align="center">💸 Wallet - Expense Tracker with React Native & Express 🚀</h1>
+💸 Wallet – Expense Tracker
 
-![Demo App](/mobile/assets/images/screenshot-for-readme.png)
+A full-stack mobile expense tracking application built using React Native (Expo) and Express.js.
+The application supports authentication, transaction management, and cloud-based data storage.
 
-## 🎯 What You'll Build
+📱 Overview
 
-This isn't just a front-end app — it's a **complete mobile application** with backend integration, authentication, and cloud-based storage.
+Wallet is a cross-platform mobile application that allows users to:
 
-✅ Works on **iOS & Android (simulator or real device)**  
-✅ Uses your existing **React knowledge**  
-✅ No need for Swift, Kotlin, or native modules  
-✅ Full-stack project in **under 4 hours**
+Track income and expenses
 
----
+View transaction history
 
-## 🧑‍🍳 App Features Overview
+Monitor account balance
 
-- 🔐 **Authentication** with email verification using **Clerk**
-- 📝 **Signup & Login** flows with 6-digit email code
-- 🏠 **Home Screen** that shows your current balance & past transactions
-- ➕ **Create Screen** to add **income** or **expense** transactions
-- 🔄 **Pull to refresh** functionality from scratch
-- 🗑️ **Delete transactions** to update balance
-- 🚪 **Logout** to navigate back to login screen
+Securely authenticate using email verification
 
----
+Persist data using a backend API and cloud database
 
-## 🧠 What You’ll Learn
+The app works on both iOS and Android devices.
 
-- ⚙️ Build and deploy an **Express API** with **PostgreSQL** using **Neon**
-- 🔐 Implement authentication & email verification with **Clerk**
-- 📲 Build a full mobile app with **React Native & Expo**
-- 🧵 Manage state and navigation using **React Navigation**
-- 🛡️ Understand and apply **Rate Limiting** using **Redis**
-- 🚀 Deploy both backend & mobile with cloud-based tools
-- 🧪 Beginner-friendly for first-time React Native devs
+🚀 Features
 
----
+🔐 Secure authentication with email verification (Clerk)
 
-## 📁 .env Setup
+📝 User signup and login
 
-### ⚙️ Backend (`/backend`)
+💰 Real-time balance calculation
 
-```bash
+➕ Add income and expense transactions
+
+🗑️ Delete transactions
+
+🔄 Pull-to-refresh transaction list
+
+🚪 Logout functionality
+
+☁️ Cloud-based backend integration
+
+🛠️ Tech Stack
+Mobile (Frontend)
+
+React Native (Expo)
+
+React Navigation
+
+Clerk Authentication
+
+Axios / Fetch API
+
+Backend
+
+Node.js
+
+Express.js
+
+PostgreSQL (Neon)
+
+Redis (Rate Limiting)
+
+🗄️ Architecture
+
+The application follows a client-server architecture:
+
+The mobile app communicates with a RESTful Express API.
+
+Authentication is handled using Clerk.
+
+Transaction data is stored in PostgreSQL.
+
+Redis is used for rate limiting and request control.
+
+⚙️ Environment Setup
+Backend (/backend)
+
+Create a .env file:
+
 PORT=5001
 NODE_ENV=development
 
@@ -51,27 +84,49 @@ CLERK_SECRET_KEY=<your_clerk_secret_key>
 DATABASE_URL=<your_neon_postgres_connection_url>
 
 REDIS_URL=<your_redis_connection_url>
-```
 
-### ⚙️ Backend (`/backend`)
+Mobile (/mobile)
 
-```bash
+Create a .env file:
+
 EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=<your_clerk_key>
-```
 
-## ⚙️ Run the backend
-
-```bash
+▶️ Running the Project
+1️⃣ Start Backend
 cd backend
 npm install
 npm run dev
 
-```
-
-## 📱 Run the mobile
-
-```bash
+2️⃣ Start Mobile App
 cd mobile
 npm install
 npx expo start
-```
+
+📊 Core Functionality
+
+Authentication flow with secure token handling
+
+REST API integration for transaction management
+
+Dynamic balance updates
+
+Persistent cloud storage
+
+State management using React Hooks
+
+📌 Future Improvements
+
+Category-based filtering
+
+Expense analytics dashboard
+
+Dark mode support
+
+Push notifications
+
+Export transaction reports
+
+👨‍💻 Author
+
+Sakil Parvez
+React Native Developer
